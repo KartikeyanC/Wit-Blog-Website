@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ffffff !important;
+}
+
+.display {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.box {
+    width: 100%;
+    height: 80px;
+    background-color: #2a2a2a;
+    display: flex;
+    position: sticky;
+    box-shadow: #2a2a2a;
+}
+
+.Popular {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-family: 'Segoe UI';
+}
+
+.logo {
+    font-size: 2rem;
+    margin: 12px 0 0 120px;
+    color: #fff;
+}
+
+.w {
+    font-size: 3rem;
+    color: #fff;
+}
+
+.nav-link {
+    font-size: 18px;
+    color: #fff;
+    font-family: cursive;
+    margin-top: 24px;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0.175rem;
+    left: 0;
+    bottom: 20px;
+    background-color: #8DECB4;
+    transform: scale(0, 1);
+    transform-origin: 0% 100%;
+    transition: transform 0.3s ease;
+}
+
+.nav-link:hover::after {
+    transform: scale(1, 1);
+}
+
+.nav-link:hover {
+    color: #8DECB4;
+}
+
+.home {
+    margin-left: 250px;
+}
+
+.category,
+.story,
+.membership,
+.write {
+    margin-left: 80px;
+}
+
+.button {
+    background-color: #8DECB4;
+    color: #2a2a2a;
+    padding: 8px;
+    width: 100px;
+    margin: 22px 0 0 204px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #8DECB4;
+    color: #2a2a2a;
+}
+
+.container {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.imge {
+    width: 100%;
+    height: 100%;
+    transition: 600ms;
+}
+
+.imge:hover {
+    filter: grayscale(1);
+    transform: scale(1.03);
+}
+
+.content {
+    width: 100%;
+    font-size: x-large;
+    color: white;
+    font-family: sans-serif;
+    background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgb(18, 17, 17));
+}
+
+.grid-cont {
+    display: grid;
+    background-color: #fff;
+    grid-template-columns: repeat(4, auto);
+    gap: 20px 30px;
+    padding: 0 80px 40px;
+}
+
+.box1,
+.box2,
+.box4,
+.box5,
+.box7 {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.pa1,
+.pa2,
+.pa3,
+.pa4,
+.pa5,
+.pa6,
+.pa7,
+.pa8 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    font-size: large;
+    font-weight: 500;
+    left: 0;
+    background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgb(39, 39, 39));
+}
+
+.box6 {
+    grid-area: 2/4/4/4;
+    border-radius: 10px;
+    display: grid;
+    justify-content: center;
+}
+
+.row3 {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 20px;
+    gap: 40px;
+}
+
+.btn {
+    padding: 10px 12px;
+    font-size: 16px;
+    margin-left: 80px;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    background-color: #e9e9e9;
+}
+
+.active-btn {
+    background-color: #2a2a2a;
+    color: #8DECB4;
+}
+
+.active-btn:hover {
+    background-color: #DCD3CA;
+    color: #3D2604;
+}
+
+.followers {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    margin-top: 40px;
+    font-size: 24px;
+    font-family: 'Segoe UI';
+    font-weight: 500;
+}
+
+.bx1,
+.bx2 {
+    display: grid;
+    width: 300px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.bx1:hover {
+    transform: scale(1.02);
+    box-shadow: 10px 10px 60px 10px #d7d7d7;
+}
+
+.prof {
+    display: flex;
+    gap: 20px;
+    padding: 8px;
+    height: 80px;
+}
+
+.profile-img {
+    width: 70px;
+}
+
+.profile_details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.name {
+    font-weight: 500;
+    font-family: 'Lucida Sans Unicode';
+}
+
+.date {
+    font-weight: 300;
+    font-family: 'Montserrat';
+}
+
+.share {
+    display: flex;
+    gap: 24px;
+    padding-top: 4px;
+}
+
+.share img {
+    width: 20px;
+    cursor: pointer;
+}
+
+.share img:hover {
+    transform: scale(1.1);
+}
+
+.Trust {
+    display: flex;
+    padding-left: 10px;
+    font-family: 'Montserrat';
+    background-color: #ffdfba;
+    width: 60px;
+    height: 16px;
+    border-radius: 10px;
+    text-align: center;
+    position: absolute;
+    margin-left: 206px;
+}
+
+.Linkfy{
+    border-radius: 10px;
+    box-sizing: content-box;
+}
+
+
